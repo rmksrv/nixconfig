@@ -26,8 +26,7 @@
           {
             home-manager.useGlobalPkgs   = true;
             home-manager.useUserPackages = true;
-            users.users.rmksrv           = import ./home/users/rmksrv/users.nix;
-            home-manager.users.rmksrv    = import ./home/users/rmksrv/home-manager.nix;
+            home-manager.users.rmksrv    = import ./home/default.nix;
           }
         ];
 
